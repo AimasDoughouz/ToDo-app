@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;/salt&gt; :: ToDo</title>
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+  <header>
+    <form action="">
+        <h3>Register New ToDo</h3>
+        <p id="warning">Both fields are required!</p>
+        <label for="item">Title</label>
+        <input id="item" type="text" placeholder="insert Title">
+        <label for="description">Description</label>
+        <input id="description" type="text" placeholder="insert description">
+        <button id="add-item" type="submit">+</button>
+    </form> 
+  </header>
+    <span class="card-descriptions">
+      <p class="card__todo-title">To Do</p>
+      <p class="card__done-title">Done</p>
+    </span>
+  <div id="container"></div>
+  <script src="js/todo.js"></script>
+</body>
+</html>

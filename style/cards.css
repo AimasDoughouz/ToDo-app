@@ -1,0 +1,89 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 254, 209);
+    box-shadow: 2px 2px 20px 0px rgb(255, 234, 4),10px 10px 20px 0px black;
+}
+
+.card footer {
+    font-size: 13px;
+    align-self: flex-end;
+    border: thin solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2px;
+
+}
+
+.card-descriptions {
+    display: none;
+}
+.card-descriptions p {
+    padding: 10px;
+    font-weight: 700;
+    background-color: rgb(220, 174, 197);
+}
+
+.card button {
+    margin: 5px; 
+    border: 1px solid black;
+    border-radius: 15%;
+    width: fit-content;
+    align-self: flex-end;
+    background-color: rgb(196, 10, 10);
+    color: white;
+    font-size: 18px;
+    z-index: 2;
+}
+.card button:active {
+	position:relative;
+	top:2px;
+}
+
+.card__done {
+    background-color: rgb(214, 253, 208);
+    order: 2;
+}
+
+.card__done h2, .card__done p {
+    text-decoration: line-through;
+}
+
+@media only screen and (min-width: 768px) {
+    #container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-flow: dense;
+        grid-gap: 5px;
+    }
+    .card__todo {
+        grid-column: 1;
+    }
+    .card__done {
+        grid-column: 2;
+    }
+    .card-descriptions {
+        display: grid;
+        text-align: center; 
+    }
+    .card__todo-title {
+        grid-column: 1;
+        border: 1px solid black;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .card__done-title {
+        grid-column-start: 2;
+        border: 1px solid black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+
+
+

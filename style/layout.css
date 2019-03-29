@@ -1,0 +1,23 @@
+header {
+    margin-bottom: 10px;
+    padding: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background: #654ea3;  
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  
+    background: linear-gradient(to right, #eaafc8, #654ea3); 
+    opacity: 0.8;
+    z-index: 3;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+

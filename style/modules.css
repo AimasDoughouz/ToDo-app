@@ -1,0 +1,62 @@
+#add-item {
+    margin: 5px; 
+    align-self: flex-end;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 21px;
+
+}
+#add-item:active {
+	position:relative;
+	top:2px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#warning {
+    align-self: center;
+    margin: 0;
+    display: none;
+    color: red;
+}
+
+
+input {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+input::placeholder {
+    font-size: 15px;
+}
+
+.stamp {
+    display: none;
+    transform: rotate(12deg);
+    font-size: 3rem;
+    font-weight: 700;
+    border: 0.25rem solid #555;
+    padding: 0.25rem 1rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    font-family: 'Courier';
+    -webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+    -webkit-mask-size: 944px 604px;
+    mix-blend-mode: multiply;
+}
+
+.card__done > .stamp--completed {  
+    display: inline-block;
+    color: #0A9928;
+	border: 0.5rem solid #0A9928;
+	-webkit-mask-position: 13rem 6rem;
+	transform: rotate(-25deg);
+    border-radius: 0;
+    position: absolute;
+    align-self: center;
+    opacity: 0.7;
+    z-index: 1;
+}

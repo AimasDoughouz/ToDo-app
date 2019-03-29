@@ -1,0 +1,14 @@
+html{
+    margin: 0; padding: 0; height: fit-content; width: 100%;
+}
+
+body {
+    min-height: 800px;
+    margin: 15px;
+    background: #ADA996; 
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    font-size: 1.2em;    
+}
+
+
