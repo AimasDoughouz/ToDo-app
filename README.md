@@ -2,4 +2,4 @@
 
 ## Salt ToDo
 
-This is a simple todo app created at </salt>- no backend
+This is a simple todo app- no backend
